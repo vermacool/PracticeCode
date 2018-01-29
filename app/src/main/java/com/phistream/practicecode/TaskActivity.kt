@@ -30,7 +30,7 @@ class TaskActivity : AppCompatActivity() {
         val taskList = ArrayList<Model>()
         taskList.add(Model("Draw Polyline", "On touch drop marker and make "))
         taskList.add(Model("Make alarm", "On on reaching home play alarm"))
-        taskList.add(Model("Game", "Create Team"))
+        taskList.add(Model("Game", "Create Team to play"))
         taskListView.adapter = Adapter(taskList) {
             when (it.title) {
                 "Draw Polyline" -> {
