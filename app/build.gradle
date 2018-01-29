@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'realm-android'
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -29,6 +31,9 @@ android {
         cmake {
             path "CMakeLists.txt"
         }
+    }
+    realm {
+        syncEnabled = true
     }
 }
 

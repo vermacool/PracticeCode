@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/PracticeCode.iml" filepath="$PROJECT_DIR$/PracticeCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PracticeCode.iml" filepath="$PROJECT_DIR$/.idea/PracticeCode.iml" />
+      <module fileurl="file://D:\Workspace\Practice Code\PracticeCode\PracticeCode.iml" filepath="D:\Workspace\Practice Code\PracticeCode\PracticeCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Workspace\Practice Code\PracticeCode\app\app.iml" filepath="D:\Workspace\Practice Code\PracticeCode\app\app.iml" />
     </modules>
   </component>
 </project>

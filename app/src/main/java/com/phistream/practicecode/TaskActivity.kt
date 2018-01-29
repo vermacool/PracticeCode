@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import com.phistream.practicecode.game.CreateTeamActivity
 import com.phistream.practicecode.path.MapsActivity
 
 import kotlinx.android.synthetic.main.activity_task.*
@@ -29,6 +30,7 @@ class TaskActivity : AppCompatActivity() {
         val taskList = ArrayList<Model>()
         taskList.add(Model("Draw Polyline", "On touch drop marker and make "))
         taskList.add(Model("Make alarm", "On on reaching home play alarm"))
+        taskList.add(Model("Game", "Create Team"))
         taskListView.adapter = Adapter(taskList) {
             when (it.title) {
                 "Draw Polyline" -> {
@@ -36,6 +38,10 @@ class TaskActivity : AppCompatActivity() {
                 }
                 "Make alarm" -> {
                     Toast.makeText(applicationContext, "alarm", Toast.LENGTH_SHORT).show()
+
+                }
+                "Game" ->{
+                    startActivity(Intent(this, CreateTeamActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))
 
                 }
             }
