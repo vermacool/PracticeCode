@@ -54,7 +54,6 @@ class TaskActivity : AppCompatActivity() {
                 }
                 "Make alarm" -> {
                     Toast.makeText(applicationContext, "alarm", Toast.LENGTH_SHORT).show()
-
                 }
                 "Game" -> {
                     startActivity(Intent(this, CreateTeamActivity::class.java).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP))

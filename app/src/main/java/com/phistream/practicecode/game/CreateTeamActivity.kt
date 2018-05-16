@@ -10,7 +10,6 @@ import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.widget.Toast
 import com.phistream.practicecode.R
-import io.realm.Realm
 
 import kotlinx.android.synthetic.main.activity_create_team.*
 

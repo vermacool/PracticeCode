@@ -4,7 +4,6 @@ import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.os.AsyncTask;
-import android.support.annotation.NonNull;
 
 import java.util.List;
 
@@ -17,13 +16,15 @@ import java.util.List;
  */
 public class BorrowedListViewModel extends AndroidViewModel {
 
-    private final LiveData<List<BorrowModel>> itemAndPersonList;
+    private LiveData<List<BorrowModel>> itemAndPersonList;
     private AppDatabase appDatabase;
 
     public BorrowedListViewModel(Application application) {
         super(application);
         appDatabase = AppDatabase.getDatabase(this.getApplication());
-        itemAndPersonList = appDatabase.itemAndPersonModel().getAllBorrowedItems();
+        if (appDatabase != null) {
+            itemAndPersonList = appDatabase.itemAndPersonModel().getAllBorrowedItems();
+        }
     }
 
     public LiveData<List<BorrowModel>> getItemAndPersonList() {
